@@ -13,7 +13,7 @@
     <h1>All Fruits</h1>
   <ul>
     <% fruits.forEach(fruit => { %>
-      <li><%= fruit.name %> - is ready to eat:<%= fruit.isReadyToEat === true ? "Yes" : "No" %></li>
+      <li><a href="/fruits/<%= fruit._id %>"><%= fruit.name %> - is ready to eat:<%= fruit.isReadyToEat === true ? "Yes" : "No" %></a></li>
     <% }); %>
   </ul>
 </body>
